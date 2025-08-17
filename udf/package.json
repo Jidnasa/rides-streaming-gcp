@@ -1,0 +1,9 @@
+
+{
+  "name": "rides-udf",
+  "version": "1.0.0",
+  "description": "Dataflow JS UDF for rides streaming",
+  "main": "normalize.js",
+  "scripts": { "test": "jest --colors" },
+  "devDependencies": { "jest": "^29.7.0" }
+}

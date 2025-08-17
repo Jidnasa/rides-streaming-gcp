@@ -1,0 +1,17 @@
+
+name: ci
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+jobs:
+  test-and-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: cd udf && npm ci && npm test
+      - name: SQL Lint (sqlfluff)
+        uses: sqlfluff/sqlfluff-action@v1
+        with: { dialect: bigquery, paths: "bq/**/*.sql" }

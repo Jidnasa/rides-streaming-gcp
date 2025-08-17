@@ -1,0 +1,4 @@
+
+[tool.sqlfluff.core]
+dialect = bigquery
+exclude_rules = L031,L034,L057
