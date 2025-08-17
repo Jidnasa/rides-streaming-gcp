@@ -8,7 +8,7 @@ Production baseline with **DLQ**, **DQ tripwires**, and **compact views** for fa
 
 ## Architecture
 ![Simple](docs/images/gcp_streaming_architecture_simple.png)
-![Azure-style](docs/images/gcp_streaming_pipeline_azure_style_v2.png)
+
 
 ## Quick Install (UI)
 1. **Create datasets** (region = `<REGION>`): `rides`, `rides_gold_views`, `rides_ops`.
